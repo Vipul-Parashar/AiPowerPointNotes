@@ -140,7 +140,7 @@ This processes all 5 slides, writes notes to each slide's `NotesPage`, verifies 
 
 ## How to Customize the Note-Writing Prompt
 
-All prompt instructions and teacher tone rules are centralized in [`src/Services/PromptBuilder.cs`](file:///C:/Users/vipul/.gemini/antigravity/scratch/AiSpeakerNotes/src/Services/PromptBuilder.cs):
+All prompt instructions and teacher tone rules are centralized in [`src/Services/PromptBuilder.cs`](./src/Services/PromptBuilder.cs):
 
 ### System Prompt Rules
 Located in `PromptBuilder.BuildSystemPrompt()`:
@@ -151,7 +151,7 @@ Located in `PromptBuilder.BuildSystemPrompt()`:
 - **Explain, Don't Recite**: Instructs the LLM never to simply read off bullets or table rows.
 
 To modify the prompt:
-1. Open [`src/Services/PromptBuilder.cs`](file:///C:/Users/vipul/.gemini/antigravity/scratch/AiSpeakerNotes/src/Services/PromptBuilder.cs) in any text editor.
+1. Open [`src/Services/PromptBuilder.cs`](./src/Services/PromptBuilder.cs) in any text editor.
 2. Adjust the rules or formatting in `BuildSystemPrompt` or `BuildUserPrompt`.
 3. Double-click `build.bat` to recompile `bin\AiSpeakerNotes.dll`.
 4. Restart PowerPoint to see your changes in action!
